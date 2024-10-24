@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Commission Calculation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sales Commission Calculation</h2>
+    <form action="calculate_commission.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="month">Month:</label>
+        <input type="text" id="month" name="month" required>
+
+        <label for="sales_amount">Sales Amount:</label>
+        <input type="number" id="sales_amount" name="sales_amount" step="0.01" min="0" required>
+
+        <input type="submit" value="Calculate Commission">
+    </form>
+</body>
+</html>
+</csartifact><csartifact identifier="calculate-commission-php" type="application/vnd.cs.code" language="php" title="Calculate Commission (PHP)">
